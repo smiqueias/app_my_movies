@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # app_my_movies
 
 A new Flutter project.
