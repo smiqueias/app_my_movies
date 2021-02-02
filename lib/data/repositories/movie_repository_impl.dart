@@ -5,7 +5,7 @@ import 'package:app_my_movies/domain/entities/movie_entity.dart';
 import 'package:app_my_movies/domain/repositories/movie_repository.dart';
 import 'package:dartz/dartz.dart';
 
-class MovieRepositoryImpl implements MovieRepository {
+class MovieRepositoryImpl implements IMovieRepository {
 
   final MovieRemoteDataSourceImpl remoteDataSource;
 
