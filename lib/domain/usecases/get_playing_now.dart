@@ -5,7 +5,7 @@ import 'package:app_my_movies/domain/repositories/movie_repository.dart';
 import 'package:app_my_movies/domain/usecases/usecase.dart';
 import 'package:dartz/dartz.dart';
 
-class GetPlayingNow extends UseCase<List<MovieEntity>, NoParams> {
+class GetPlayingNow implements UseCase<List<MovieEntity>, NoParams> {
   final IMovieRepository repository;
  
   GetPlayingNow(this.repository);

@@ -2,7 +2,6 @@ import 'package:app_my_movies/common/constants/size_constants.dart';
 import 'package:app_my_movies/common/screenutil/screenutil.dart';
 import 'package:app_my_movies/domain/entities/movie_entity.dart';
 import 'package:app_my_movies/presentation/blocs/movie_backdrop/movie_backdrop_bloc.dart';
-import 'package:app_my_movies/presentation/screens/home/movie_carousel/movie_card_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:app_my_movies/common/extensions/size_extensions.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

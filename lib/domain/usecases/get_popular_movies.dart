@@ -5,7 +5,7 @@ import 'package:app_my_movies/domain/repositories/movie_repository.dart';
 import 'package:app_my_movies/domain/usecases/usecase.dart';
 import 'package:dartz/dartz.dart';
 
-class GetPopularMovies extends UseCase<List<MovieEntity>, NoParams> {
+class GetPopularMovies implements UseCase<List<MovieEntity>, NoParams> {
   final IMovieRepository repository;
 
   GetPopularMovies(this.repository);

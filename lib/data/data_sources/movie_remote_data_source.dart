@@ -22,7 +22,6 @@ class MovieRemoteDataSourceImpl implements IMovieRemoteDataSource {
 
     if (response.statusCode == 200) {
       final movies = moviesTrendingModelFromJson(response.data).movies;
-      print(movies);
       return movies;
     } else {
       throw Exception('API Trending By Day error => $response.statusMessage');
@@ -32,7 +31,7 @@ class MovieRemoteDataSourceImpl implements IMovieRemoteDataSource {
   @override
   Future<List<MovieModel>> getPopularMovies() async {
     final response = await _client.get(
-      '${ApiConstants.BASE_URL}/movie/popular?api_key=${ApiConstants.API_KEY}',
+      '${ApiConstants.BASE_URL}movie/popular?api_key=${ApiConstants.API_KEY}',
       options: Options(
         headers: {
           'Content-Type': 'application/json',
@@ -42,7 +41,6 @@ class MovieRemoteDataSourceImpl implements IMovieRemoteDataSource {
 
     if (response.statusCode == 200) {
       final movies = moviesTrendingModelFromJson(response.data).movies;
-      print(movies);
       return movies;
     } else {
       throw Exception('API Popular Movies error => $response.statusMessage');
@@ -62,7 +60,6 @@ class MovieRemoteDataSourceImpl implements IMovieRemoteDataSource {
 
     if (response.statusCode == 200) {
       final movies = moviesTrendingModelFromJson(response.data).movies;
-      print(movies);
       return movies;
     } else {
       throw Exception('API Coming Soon error => $response.statusMessage');
@@ -82,7 +79,6 @@ class MovieRemoteDataSourceImpl implements IMovieRemoteDataSource {
 
     if (response.statusCode == 200) {
       final movies = moviesTrendingModelFromJson(response.data).movies;
-      print(movies);
       return movies;
     } else {
       throw Exception('API Playing Now error => $response.statusMessage');
