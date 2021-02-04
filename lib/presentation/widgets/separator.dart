@@ -19,8 +19,8 @@ class Separator extends StatelessWidget {
         ),
         gradient: LinearGradient(
           colors: [
-            AppColor.violet,
             AppColor.royalBlue,
+            AppColor.violet,
           ],
         ),
       ),

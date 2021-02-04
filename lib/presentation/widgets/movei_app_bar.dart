@@ -21,7 +21,7 @@ class MovieAppBar extends StatelessWidget {
               'assets/svgs/menu.svg',
               height: Sizes.dimen_12.h,
             ),
-            onPressed: () {},
+            onPressed: () => Scaffold.of(context).openDrawer(),
           ),
           Expanded(
             child: const LogoWidget(
